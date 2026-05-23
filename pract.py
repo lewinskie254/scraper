@@ -23,4 +23,4 @@ with sync_playwright() as p:
 
 # Now Beautiful Soup can see everything perfectly!
 soup = BeautifulSoup(html_content, 'lxml')
-print(soup.find_all('div', class_='job-card-class'))
+print(soup.find_all('div', class_='srp-card'))
