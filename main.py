@@ -5,9 +5,7 @@ with open("index.html", "r") as html_file:
     content = html_file.read()
     soup = BeautifulSoup(content, "lxml")
     book_cards = soup.find_all("div", class_="card")
-
     book_details = []
-
     for book in book_cards:
         topic_tag = book.find("span", class_="badge")
         title_tag = book.find("h2", class_="book-title")
